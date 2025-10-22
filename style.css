@@ -1,7 +1,83 @@
+/* General Body Styles */
 body {
-  background-color: powderblue;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #F0F4F8; /* Light blue-gray background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
+
+/* Main container box */
+.container {
+    background-color: #D6EAF8; /* A soft, shade blue */
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
 h1 {
-  color: rgb(255, 0, 0);
-  text-align: center;
+    color: #283747;
+    margin-top: 0;
+}
+
+p {
+    color: #566573;
+    font-size: 1rem;
+}
+
+/* Input and Button Grouping */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Input Box Style */
+#nameInput {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #A9CCE3;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#nameInput:focus {
+    border-color: #5499C7;
+    box-shadow: 0 0 0 3px rgba(84, 153, 199, 0.2);
+}
+
+/* Button Style */
+#greetButton {
+    padding: 12px 20px;
+    background-color: #5499C7; /* A pleasing blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#greetButton:hover {
+    background-color: #4682B4; /* A slightly darker blue for hover */
+    transform: translateY(-2px);
+}
+
+/* Greeting Message Style */
+.message {
+    margin-top: 25px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #1A5276; /* A darker blue for the message text */
+    min-height: 1.5em; /* Prevents layout shift when text appears */
 }
